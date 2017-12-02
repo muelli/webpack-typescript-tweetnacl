@@ -1,0 +1,29 @@
+{
+  "name": "idoweb",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/lodash": "^4.14.86",
+    "lodash": "^4.17.4",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
+    "tweetnacl": "^1.0.0",
+    "tweetnacl-util": "^0.15.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.13.2",
+    "uglifyjs": "^2.4.11",
+    "webpack": "^3.9.1",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev": "^1.1.0",
+    "webpack-env": "^0.8.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --progress --colors --display-error-details -d --devtool=inline-source-map",
+    "watch": "webpack --config webpack.config.js --progress --colors --display-error-details -d --devtool=inline-source-map --watch",
+    "build-production": "webpack --config webpack.config.js --progress --colors -p"
+  }
+}
