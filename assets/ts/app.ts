@@ -8,6 +8,7 @@ console.log ("my foo: " + foo);
 
 // const foo = _.padStart("Hello, TypeScript!", 30, ".");
 const h = nacl.hash(naclutil.decodeUTF8(foo));
+const j = nacl.secretbox.keyLength;
 console.log ("my 2nd foo: " + naclutil.encodeBase64(h));
 
 // nacl.box;
